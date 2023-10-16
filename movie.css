@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto',sans-serif;
+}
+.p{
+    color: white;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: black;    
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+
+.logo-container{
+    color: red;
+    font-size: xx-large;
+    font-family:fantasy;
+    text-transform: uppercase;
+    flex: 1;
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    color: white;
+    list-style: none;
+    margin-left: 50px;
+}
+
+.menu-class-anchor{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-list-item{
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    color: aliceblue;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+    display: flex;
+}
+
+.profile-img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    text-transform:uppercase;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover  {
+    text-decoration: overline red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: black;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+.toogle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.toogle-icon{
+    color: goldenrod;
+}
+.toogle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.left-menu-icon{
+    color: white;
+    font-size:x-large;
+    margin-bottom: 60px;
+}
+.left-menu-icon:hover{
+    color: red;
+
+}
+
+.container{
+    background-color: black;
+    height: 100%;
+    color: white;
+}
+
+.content-container{
+    margin-left: 50px;
+}
+
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+    background-repeat: no-repeat;
+    
+}
+
+.featured-title{
+    width: 200px;
+}
+
+.featured-desc{
+    width: 500px;
+    color: lightgray;
+    margin: 30px 0px;
+}
+
+.featured-button{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    font-size: large;
+    margin-top: 5px;
+    text-transform: capitalize;
+   
+}
+
+.movie-list-container-one{
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.movie-list-container{
+    padding:20px;
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+
+.movie-list-title{
+    text-transform: uppercase;
+    color: red;
+}
+
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover.movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+} 
+
+.movie-list-item:hover.movie-list-item-title,
+.movie-list-item:hover.movie-list-item-desc,
+.movie-list-item:hover.movie-list-item-button{
+    opacity: 1;
+}
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit:cover;
+    padding-top: 20px;
+    border-radius: 30px;    
+}
+
+.movie-list-item-img:hover{
+    border: 2px solid white;
+}
+
+.movie-list-item-title{
+    font-family:sans-serif;
+    color: grey;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.movie-list-item-button{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: large;
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 85px;
+    cursor: pointer;
+   
+}
+
+
+.arrow{
+    font-size: 100px;
+    position: absolute;
+    color:lightgray;
+    top: 70px;
+    right: 0;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    background-color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toogle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.movie-list-item-button.active{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    font-size: large;
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie-hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,700;1,900&family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="javascript.js" defer></script>    
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+        <div class="logo-container">movie hub</div>
+        <div class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-list-item active"><a class=menu-class-anchor href="index.html">home</a> &nbsp;   </li>
+                <li class="menu-list-item active"><a class=menu-class-anchor href="movie.html">movies</a> &nbsp;</li>
+                <li class="menu-list-item active"><a class=menu-class-anchor href="series.html">series</a> &nbsp;</li>
+                <li class="menu-list-item active"><a class=menu-class-anchor href="popular.html">popular</a> &nbsp;</li>
+                <li class="menu-list-item active"><a class=menu-class-anchor href="trending.html">trending</a> &nbsp;</li>
+            </ul>
+        </div>
+        <div class="profile-container">
+            <img class="profile-img" src="images/profile.jpg">
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">profile</a>
+                    <div class="dropdown-content">
+                      <a href="log.html">account</a>
+                      <a href="sign.html">sign in</a>
+                    </div>
+                  </li>
+            </ul>
+            
+        </div>
+       </div>
+    </div> 
+    <div class="sidebar">
+        <a href="index.html"><ion-icon class="left-menu-icon" name="home"></ion-icon></a>
+        <a href="search.html"><ion-icon class="left-menu-icon" name="search"></ion-icon></a>
+        <a href="trending.html"><ion-icon class="left-menu-icon" name="trending-up-outline"></ion-icon></a>
+        <a href="movie.html"><ion-icon class="left-menu-icon"name="videocam-outline"></ion-icon></a>
+        <a href="series.html"><ion-icon class="left-menu-icon" name="tv"></ion-icon></a>
+    </div>
+
+    <div class="container">
+      <div class="content-container">
+        <div class="featured-content"
+        style="background-image: linear-gradient(to bottom,rgba(0,0,0,0), #151515), url(images/f-1.jpg);"
+        >
+        <img class="featured-title" src="images/f-t-1.png" alt="">
+        <p class="featured-desc">an psycho who starts his day at dawn ! and works till dusk . he does not want to live normal life like others he have different opinion on life let's dive into his life!</p>
+        <button class="featured-button">watch</button>
+        </div>
+
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">new release</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/oppenheimer.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>oppenheimer</h2></span>
+                        <!--<p class="movie-list-item-desc">oppenheimer is based on manhattan project .a team of scientist spend years developing and designing the atomic bomb</p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/john.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>john wick</h2></span>
+                        <!--<p class="movie-list-item-desc">john wick takes fight against the high table global as he seeks out the most powerful player in the underworld,</p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/leonardo.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>shutter island</h2></span>
+                        <!--<p class="movie-list-item-desc">two us marshal, are sent to an asylum on a remote island in order to investigate disappearance of pateint </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/fast.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>fast x</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/dunkirk.webp" alt="">
+                        <span class="movie-list-item-title"><h2>dunkirk</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/dark.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>dark</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div> 
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/dark-w.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>the dark knight</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/gadar.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>gadar 2</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/she.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>she</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>             
+                </div>
+                <ion-icon name="chevron-forward" class="arrow"></ion-icon>     
+            </div>
+        </div> 
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">web-series</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/breaking.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>breaking bad</h2></span>
+                        <!--<p class="movie-list-item-desc">oppenheimer is based on manhattan project .a team of scientist spend years developing and designing the atomic bomb</p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/mirzapur.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>mirzapur</h2></span>
+                        <!--<p class="movie-list-item-desc">john wick takes fight against the high table global as he seeks out the most powerful player in the underworld,</p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/peaky.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>peaky blinders</h2></span>
+                        <!--<p class="movie-list-item-desc">two us marshal, are sent to an asylum on a remote island in order to investigate disappearance of pateint </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/money.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>money heist</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/farzi.jpeg" alt="">
+                        <span class="movie-list-item-title"><h2>farzi</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/scam.jpg" alt="">
+                        <span class="movie-list-item-title"><h2>scam 1992</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="images/stranger.webp" alt="">
+                        <span class="movie-list-item-title"><h2>stranger things</h2></span>
+                        <!--<p class="movie-list-item-desc">a succesful banker ,is arrested for the murders of his wife and her love,and is sentanced to life imprisonment at prison </p>-->
+                        <button class="movie-list-item-button">watch</button>
+                    </div>
+                       
+                </div>
+                <ion-icon name="chevron-forward" class="arrow"></ion-icon>     
+            </div>
+        </div> 
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

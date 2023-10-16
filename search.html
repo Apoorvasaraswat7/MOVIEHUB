@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="search.css">
+    <script src="search.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">movie hub</div>
+                <div class="search-box">
+                    <input type="search" placeholder="search" id="searchInput" class="search"  style="height: 30px; width:300px; border-radius: 50px; font-size:1rem;background-color:transparent; color: aliceblue;border: 1px solid red; padding: 0.5rem 1rem;margin-right: 50px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a href="index.html"><ion-icon class="left-menu-icon" name="home"></ion-icon></a>
+            <a href="search.html"><ion-icon class="left-menu-icon" name="search"></ion-icon></a>
+            <a href="trending.html"><ion-icon class="left-menu-icon" name="trending-up-outline"></ion-icon></a>
+            <a href="movie.html"><ion-icon class="left-menu-icon"name="videocam-outline"></ion-icon></a>
+            <a href="series.html"><ion-icon class="left-menu-icon" name="tv"></ion-icon></a>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <div class="image-box">
+        <div class="movie">
+            <img src="images/oppenheimer.jpg" alt="image" data-caption=oppenheimer class="movie-img">
+
+            <div class="movie-info">
+                <h3>oppenheimer</h3>
+                <span class="rating">9.8</span>
+            </div>
+        </div>
+        </div>
+        <div class="image-box">
+        <div class="movie">
+            <img src="images/leonardo.jpg" alt="image" data-caption=shutterisland>
+            
+            <div class="movie-info">
+                <h3>shutter island</h3>
+                <span class="rating">9.8</span>
+            </div>
+        </div>
+        </div>
+       
+        <div class="movie">
+            <img src="images/breaking.jpg" alt="image" data-caption="breaking">
+
+            <div class="movie-info">
+                <h3>breaking-bad</h3>
+                <span class="rating">9.8</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/peaky.jpg" alt="image" data-caption="peaky">
+
+            <div class="movie-info">
+                <h3>peaky blinders</h3>
+                <span class="rating">9.8</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/patal.avif" alt="image" data-caption="patal">
+
+            <div class="movie-info">
+                <h3>patal lok</h3>
+                <span class="rating">8.1</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/diplomat.png" alt="image" data-caption="diplomat">
+
+            <div class="movie-info">
+                <h3>diplomat</h3>
+                <span class="rating">7.1</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/sacred.jpg" alt="image" data-caption="sacred games">
+
+            <div class="movie-info">
+                <h3>sacred games</h3>
+                <span class="rating">8.5</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/scam.jpg" alt="image" data-caption="scam 1992">
+
+            <div class="movie-info">
+                <h3>scam 1992</h3>
+                <span class="rating">9.3</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/she.jpg" alt="image" data-caption="she">
+
+            <div class="movie-info">
+                <h3>she</h3>
+                <span class="rating">6.1</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/stranger.webp" alt="image" data-caption="stranger things">
+
+            <div class="movie-info">
+                <h3>stranger things</h3>
+                <span class="rating">8.7</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/dark-w.jpg" alt="image" data-caption="dark">
+
+            <div class="movie-info">
+                <h3>dark</h3>
+                <span class="rating">8.7</span>
+            </div>
+            
+        </div>
+        <div class="movie">
+            <img src="images/dunkirk.webp" alt="image" data-caption="dunkirk">
+
+            <div class="movie-info">
+                <h3>dunkirk</h3>
+                <span class="rating">7.8</span>
+            </div>
+            
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const searchInput= document.getElementById('searchInput');
+        const images=document.querySelectorAll('.movie');
+
+        searchInput.addEventListener('input', () => {
+         const searchTerm = searchInput.value.toLowerCase();
+  
+    images.forEach(image => {
+      const caption = image.querySelector('img').getAttribute('data-caption').toLowerCase();
+  
+      if (caption.includes(searchTerm)){
+        image.style.display = 'block';
+      } else {
+        image.style.display = 'none';
+      }
+    });
+  });
+
+    </script> 
+</body>
+</html>
